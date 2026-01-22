@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BLAKE.BS — Web Design Project</title>
+  <meta name="description" content="BLAKE.BS — a simple preview site for the web design project." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">BLAKE.BS</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Thoughtful web design, crafted for clarity.</h1>
+          <p class="lead">A minimal preview for the BLAKE.BS project. Replace this with your React/Vite site or expand as needed.</p>
+          <p><a class="btn" href="#work">See work</a></p>
+        </div>
+        <div class="hero-preview" aria-hidden="true">
+          <!-- simple placeholder illustration -->
+          <svg width="320" height="200" viewBox="0 0 320 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+            <rect width="320" height="200" rx="12" fill="#071029"/>
+            <rect x="12" y="16" width="296" height="28" rx="6" fill="#0b1220"/>
+            <rect x="12" y="52" width="296" height="120" rx="8" fill="#081226"/>
+            <rect x="28" y="72" width="264" height="16" rx="4" fill="#0f172a"/>
+            <rect x="28" y="96" width="180" height="12" rx="4" fill="#102032"/>
+            <rect x="28" y="116" width="220" height="12" rx="4" fill="#102032"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About</h2>
+      <p>This repository currently holds a simple static preview. If your real project uses Vite + React + Tailwind, put the production build files here or keep the source and run the dev server locally.</p>
+    </section>
+
+    <section id="work" class="container section cards">
+      <article class="card">
+        <h3>Design system</h3>
+        <p>Colors, spacing, and accessible typography — a lightweight starting point for the project.</p>
+      </article>
+      <article class="card">
+        <h3>Responsive layout</h3>
+        <p>Mobile-first layout with balance between text and visual preview areas.</p>
+      </article>
+      <article class="card">
+        <h3>Next steps</h3>
+        <p>Replace this with your built site (index.html + assets) or the Vite source.</p>
+      </article>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <p>Repo: <code>jjjones64610-coder/BLAKE.BS</code></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> BLAKE.BS — Preview site</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
